@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Draw It!</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="app.js" defer></script>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Draw It!</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<script src="app.js" defer></script>
 
-        <div id="container">
-            <h1 class="title">DRAW IT!</h1>
-            <div id="board">
-
+		<div id="container">
+			<h1 class="title">DRAW IT!</h1>
+            <div id="boardArea">
+                <input type="color" id="fill-color" value="#ada1eb">
+                <div id="board"></div>
+                <button id="eraser"></button>
             </div>
-        </div>
-    </body>
+			<input
+				type="range"
+				id="range-slider"
+				class="range-slider"
+				min="1"
+				value="16"
+			/>
+			<label for="range-slider" id="range-text">Dimension: 16 x 16</label>
+		</div>
+	</body>
 </html>
