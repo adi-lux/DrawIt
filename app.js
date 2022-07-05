@@ -21,6 +21,7 @@ const setDimensions = (newNumber = 16) => {
 			newCell.className = "cell";
 			newCell.id = `cell-${newId}`;
 			newCell.addEventListener("mouseover", pressEvent);
+			//newCell.style.border = '1px solid #5b426b';
 
 			if (newId === 0) {
 				newCell.style.borderRadius = "0.3vh 0px 0px 0px";

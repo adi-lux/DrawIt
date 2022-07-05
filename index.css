@@ -27,7 +27,7 @@ h1 {
 
 .cell {
 	background-color: white;
-	border: 0.01vh solid #5b426b;
+	/*border: 0.01vh solid #5b426b;*/
 }
 
 #container {
