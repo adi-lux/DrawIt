@@ -71,9 +71,6 @@ h1 {
 #fill-color {
     background-color: #825faf;
     border: none;
-    border: 4px;
-    border-radius: 10px;
-
     margin-right: 5vw;
     width: 10vmin;
     height: 50vmin;
@@ -81,7 +78,7 @@ h1 {
 
 #eraser {
     background-color: #e56399;
-    border: 4px;
+    border-color: #e56399;
     border-radius: 10px;
     margin-left: 5vw;
     width: 10vmin;

@@ -1,10 +1,11 @@
 let dimension = 16;
+let backgroundColor = "#ada1eb"
 // Create a 16x16 grid of square divs
 
 const pressEvent = (e) => {
 	e.stopPropagation();
 	document.getElementById(e.target.id).style.backgroundColor =
-		"#ada1eb";
+		`${backgroundColor}`;
 };
 
 const setDimensions = (newNumber = 16) => {
@@ -48,9 +49,24 @@ const onChange = (e) => {
 	setDimensions(newDimension);
 };
 
+const onChangeColor = (e) => {
+
+    const input = document.querySelector("input#fill-color");
+    backgroundColor = input.value;
+    console.log(input.value);
+}
+
+const onClick = (e) => {
+    backgroundColor = "#FFFFFF"
+}
+
 const initialize = () => {
 	const slider = document.querySelector("input#range-slider");
+    const eraser = document.querySelector("button#eraser");
+    const colorWheel = document.querySelector("input#fill-color");
 	slider.addEventListener("change", onChange);
+    colorWheel.addEventListener("change", onChangeColor);
+    eraser.addEventListener("click", onClick);
 
 	setDimensions();
 };
